@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="5" version="2.1" version_name="Godot Engine v2.1.stable.official">
+	<ext_resource path="res://Sprites/Items/Potions.png" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://GDScripts/RedPotion.gd" type="Script" index="0"></ext_resource>
+	<resource type="RectangleShape2D" path="local://1">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 10, 18.5455 </vector2>
+
+	</resource>
+	<resource type="Animation" path="local://2">
+		<string name="resource/name"> "Idle" </string>
+		<real name="length"> 1 </real>
+		<bool name="loop"> True </bool>
+		<real name="step"> 0.3 </real>
+		<string name="tracks/0/type"> "value" </string>
+		<node_path name="tracks/0/path"> "Sprite:frame" </node_path>
+		<int name="tracks/0/interp"> 1 </int>
+		<bool name="tracks/0/imported"> False </bool>
+		<dictionary name="tracks/0/keys" shared="false">
+			<string> "times" </string>
+			<real_array  len="4"> 				0, 0.3, 0.6, 0.9 </real_array>
+			<string> "transitions" </string>
+			<real_array  len="4"> 				1, 1, 1, 1 </real_array>
+			<string> "update" </string>
+			<int> 1 </int>
+			<string> "values" </string>
+			<array  len="4" shared="false">
+				<int> 5 </int>
+				<int> 6 </int>
+				<int> 7 </int>
+				<int> 8 </int>
+			</array>
+		</dictionary>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 3 </int>
+			<string> "conns" </string>
+			<int_array  len="18"> 				0, 0, 66, 65, 2, 0, 7, 0, 68, 67, 2, 0, 8, 0, 68, 69, 2, 0 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "names" </string>
+			<string_array  len="70">
+				<string> "BigRedPotion" </string>
+				<string> "transform/scale" </string>
+				<string> "input/pickable" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "gravity_vec" </string>
+				<string> "gravity" </string>
+				<string> "linear_damp" </string>
+				<string> "angular_damp" </string>
+				<string> "script/script" </string>
+				<string> "redPotionTimer" </string>
+				<string> "Area2D" </string>
+				<string> "Particles2D1" </string>
+				<string> "transform/pos" </string>
+				<string> "config/amount" </string>
+				<string> "config/lifetime" </string>
+				<string> "config/time_scale" </string>
+				<string> "params/direction" </string>
+				<string> "params/spread" </string>
+				<string> "params/linear_velocity" </string>
+				<string> "params/spin_velocity" </string>
+				<string> "params/orbit_velocity" </string>
+				<string> "params/gravity_direction" </string>
+				<string> "params/gravity_strength" </string>
+				<string> "params/radial_accel" </string>
+				<string> "params/tangential_accel" </string>
+				<string> "params/damping" </string>
+				<string> "params/initial_angle" </string>
+				<string> "params/initial_size" </string>
+				<string> "params/final_size" </string>
+				<string> "params/hue_variation" </string>
+				<string> "params/anim_speed_scale" </string>
+				<string> "params/anim_initial_pos" </string>
+				<string> "randomness/initial_size" </string>
+				<string> "randomness/final_size" </string>
+				<string> "color/color" </string>
+				<string> "Particles2D" </string>
+				<string> "Particles2D2" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "Anim" </string>
+				<string> "playback/process_mode" </string>
+				<string> "playback/default_blend_time" </string>
+				<string> "root/root" </string>
+				<string> "anims/Idle" </string>
+				<string> "playback/active" </string>
+				<string> "playback/speed" </string>
+				<string> "blend_times" </string>
+				<string> "autoplay" </string>
+				<string> "AnimationPlayer" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "shape" </string>
+				<string> "trigger" </string>
+				<string> "_update_shape_index" </string>
+				<string> "RespawnTimer" </string>
+				<string> "process_mode" </string>
+				<string> "wait_time" </string>
+				<string> "one_shot" </string>
+				<string> "autostart" </string>
+				<string> "Timer" </string>
+				<string> "EffectTimer" </string>
+				<string> "_on_RedPotion_body_enter" </string>
+				<string> "body_enter" </string>
+				<string> "_on_RespawnTimer_timeout" </string>
+				<string> "timeout" </string>
+				<string> "_on_EffectTimer_timeout" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 9 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="275"> 				-1, -1, 12, 0, -1, 11, 1, 0, 2, 1, 3, 2, 4, 3, 5, 4, 6, 5, 7, 6, 8, 7, 9, 8, 10, 9, 11, 10, 0, 0, 0, 37, 13, -1, 23, 14, 11, 15, 12, 16, 8, 17, 13, 18, 14, 19, 15, 20, 16, 21, 17, 22, 17, 23, 17, 24, 18, 25, 17, 26, 17, 27, 17, 28, 17, 29, 8, 30, 8, 31, 17, 32, 8, 33, 17, 34, 8, 35, 8, 36, 19, 0, 0, 0, 37, 37, -1, 23, 14, 11, 15, 12, 16, 8, 17, 13, 18, 14, 19, 15, 20, 16, 21, 17, 22, 17, 23, 17, 24, 18, 25, 17, 26, 17, 27, 17, 28, 17, 29, 8, 30, 8, 31, 17, 32, 8, 33, 17, 34, 8, 35, 8, 36, 20, 0, 0, 0, 37, 38, -1, 23, 14, 21, 15, 12, 16, 8, 17, 13, 18, 14, 19, 15, 20, 16, 21, 17, 22, 17, 23, 17, 24, 18, 25, 17, 26, 17, 27, 17, 28, 17, 29, 8, 30, 8, 31, 17, 32, 8, 33, 17, 34, 8, 35, 8, 36, 22, 0, 0, 0, 39, 39, -1, 5, 14, 23, 40, 24, 41, 25, 42, 12, 43, 12, 0, 0, 0, 53, 44, -1, 8, 45, 26, 46, 17, 47, 27, 48, 28, 49, 1, 50, 13, 51, 29, 52, 30, 0, 0, 0, 54, 54, -1, 5, 14, 31, 1, 32, 55, 2, 56, 4, 57, 33, 0, 0, 0, 63, 58, -1, 4, 59, 26, 60, 34, 61, 1, 62, 4, 0, 0, 0, 63, 64, -1, 4, 59, 26, 60, 15, 61, 1, 62, 4, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="35" shared="false">
+				<vector2> 0.6, 0.6 </vector2>
+				<bool> True </bool>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<matrix32> 0.741213, -0, 0, 0.414718, -0.248974, 0.798691 </matrix32>
+				<bool> False </bool>
+				<vector2> 0, 1 </vector2>
+				<real> 98 </real>
+				<real> 0.1 </real>
+				<real> 1 </real>
+				<resource  external="0">  </resource>
+				<int> 2 </int>
+				<vector2> 0.259381, -9.73355 </vector2>
+				<int> 5 </int>
+				<real> 0.3 </real>
+				<real> 180 </real>
+				<real> 10 </real>
+				<real> 20 </real>
+				<real> 0 </real>
+				<real> 9.8 </real>
+				<color> 0.495972, 0.503964, 0.53125, 1 </color>
+				<color> 0.65625, 0.0205078, 0.124809, 1 </color>
+				<vector2> -1.44105, -6.8995 </vector2>
+				<color> 0.421875, 0.166443, 0.166443, 1 </color>
+				<vector2> -0.125343, 1.00276 </vector2>
+				<resource  external="1">  </resource>
+				<int> 8 </int>
+				<int> 1 </int>
+				<node_path> ".." </node_path>
+				<resource  resource_type="Animation" path="local://2">  </resource>
+				<array  len="0" shared="false">
+				</array>
+				<string> "" </string>
+				<vector2> -0.248974, 0.798691 </vector2>
+				<vector2> 0.741213, 0.414718 </vector2>
+				<int> 0 </int>
+				<real> 11 </real>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>

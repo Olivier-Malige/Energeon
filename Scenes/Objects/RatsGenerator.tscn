@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://GDScripts/RatsGenerator.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Objects/RatGenerator.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 22.8293
+
+[node name="RatsGenerator" type="Area2D"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 4.34074, 0, 0, 3.73512, -0.125933, 7.98243 )
+shapes/0/trigger = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 1 )
+spawnDelay = 3
+
+[node name="Sprite" type="Sprite" parent="."]
+
+visibility/visible = false
+texture = ExtResource( 2 )
+
+[node name="DetectionArea" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( -0.125933, 7.98243 )
+transform/scale = Vector2( 4.34074, 3.73512 )
+shape = SubResource( 1 )
+trigger = true
+_update_shape_index = 0
+
+[node name="SpawnPos" type="Position2D" parent="."]
+
+transform/pos = Vector2( 0.0360952, 12.9353 )
+
+[connection signal="body_enter" from="." to="." method="_on_RatsGenerator_body_enter"]
+
+[connection signal="body_exit" from="." to="." method="_on_RatsGenerator_body_exit"]
+
+

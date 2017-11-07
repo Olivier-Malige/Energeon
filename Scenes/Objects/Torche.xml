@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="11" version="2.1" version_name="Godot Engine v2.1.stable.official">
+	<ext_resource path="res://Scenes/Objects/Smoke2.tscn" type="PackedScene" index="3"></ext_resource>
+	<ext_resource path="res://Sprites/Objects/braseroBase.png" type="Texture" index="6"></ext_resource>
+	<ext_resource path="res://Sprites/Objects/brasero.png" type="Texture" index="4"></ext_resource>
+	<ext_resource path="res://Sprites/Effects/torch_light.png" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://GDScripts/light.gd" type="Script" index="2"></ext_resource>
+	<ext_resource path="res://Sprites/Objects/BraseroHider.png" type="Texture" index="5"></ext_resource>
+	<ext_resource path="res://Sprites/Effects/fire.png" type="Texture" index="7"></ext_resource>
+	<ext_resource path="res://GDScripts/Brasero.gd" type="Script" index="0"></ext_resource>
+	<resource type="RectangleShape2D" path="local://1">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 7.91366, 7.50414 </vector2>
+
+	</resource>
+	<resource type="RectangleShape2D" path="local://2">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 10, 10 </vector2>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 1 </int>
+			<string> "conns" </string>
+			<int_array  len="6"> 				10, 0, 88, 87, 2, 0 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "names" </string>
+			<string_array  len="89">
+				<string> "Brasero" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/scale" </string>
+				<string> "z/z" </string>
+				<string> "input/pickable" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "collision/layers" </string>
+				<string> "collision/mask" </string>
+				<string> "constant_linear_velocity" </string>
+				<string> "constant_angular_velocity" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "script/script" </string>
+				<string> "brasero" </string>
+				<string> "StaticBody2D" </string>
+				<string> "Light2D" </string>
+				<string> "visibility/light_mask" </string>
+				<string> "transform/rot" </string>
+				<string> "enabled" </string>
+				<string> "editor_only" </string>
+				<string> "texture" </string>
+				<string> "offset" </string>
+				<string> "scale" </string>
+				<string> "color" </string>
+				<string> "energy" </string>
+				<string> "mode" </string>
+				<string> "range/height" </string>
+				<string> "range/z_min" </string>
+				<string> "range/z_max" </string>
+				<string> "range/layer_min" </string>
+				<string> "range/layer_max" </string>
+				<string> "range/item_mask" </string>
+				<string> "shadow/enabled" </string>
+				<string> "shadow/color" </string>
+				<string> "shadow/buffer_size" </string>
+				<string> "shadow/esm_multiplier" </string>
+				<string> "shadow/item_mask" </string>
+				<string> "Smoke" </string>
+				<string> "config/amount" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "shape" </string>
+				<string> "trigger" </string>
+				<string> "_update_shape_index" </string>
+				<string> "BraseroSprite" </string>
+				<string> "Sprite" </string>
+				<string> "Hider" </string>
+				<string> "Base" </string>
+				<string> "Fire2" </string>
+				<string> "visibility/opacity" </string>
+				<string> "config/lifetime" </string>
+				<string> "config/time_scale" </string>
+				<string> "config/texture" </string>
+				<string> "params/direction" </string>
+				<string> "params/spread" </string>
+				<string> "params/linear_velocity" </string>
+				<string> "params/spin_velocity" </string>
+				<string> "params/orbit_velocity" </string>
+				<string> "params/gravity_direction" </string>
+				<string> "params/gravity_strength" </string>
+				<string> "params/radial_accel" </string>
+				<string> "params/tangential_accel" </string>
+				<string> "params/damping" </string>
+				<string> "params/initial_angle" </string>
+				<string> "params/initial_size" </string>
+				<string> "params/final_size" </string>
+				<string> "params/hue_variation" </string>
+				<string> "params/anim_speed_scale" </string>
+				<string> "params/anim_initial_pos" </string>
+				<string> "randomness/direction" </string>
+				<string> "randomness/spin_velocity" </string>
+				<string> "Particles2D" </string>
+				<string> "Fire1" </string>
+				<string> "VisibilityEnabler2D" </string>
+				<string> "rect" </string>
+				<string> "enabler/pause_animations" </string>
+				<string> "enabler/freeze_bodies" </string>
+				<string> "enabler/pause_particles" </string>
+				<string> "enabler/pause_animated_sprites" </string>
+				<string> "enabler/process_parent" </string>
+				<string> "enabler/fixed_process_parent" </string>
+				<string> "Area2D" </string>
+				<string> "gravity_vec" </string>
+				<string> "gravity" </string>
+				<string> "linear_damp" </string>
+				<string> "angular_damp" </string>
+				<string> "_on_Area2D_area_enter" </string>
+				<string> "area_enter" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 12 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="331"> 				-1, -1, 16, 0, -1, 14, 1, 0, 2, 1, 3, 2, 4, 3, 5, 4, 6, 5, 7, 3, 8, 6, 9, 6, 10, 7, 11, 8, 12, 9, 13, 8, 14, 10, 1, 15, 0, 0, 17, 17, -1, 24, 18, 11, 1, 12, 19, 13, 3, 14, 20, 15, 21, 3, 22, 16, 23, 7, 24, 17, 25, 18, 26, 9, 27, 19, 28, 8, 29, 20, 30, 21, 31, 19, 32, 19, 33, 6, 34, 15, 35, 22, 36, 23, 37, 24, 38, 6, 14, 25, 0, 0, 0, 2147483647, 39, 26, 3, 1, 27, 3, 28, 40, 28, 0, 0, 0, 41, 41, -1, 4, 1, 29, 42, 4, 43, 3, 44, 19, 0, 0, 0, 46, 45, -1, 3, 1, 30, 3, 31, 22, 32, 0, 0, 0, 46, 47, -1, 3, 1, 33, 3, 34, 22, 35, 0, 0, 0, 46, 48, -1, 2, 1, 36, 22, 37, 0, 0, 0, 72, 49, -1, 25, 50, 38, 1, 39, 3, 31, 40, 40, 51, 9, 52, 38, 53, 41, 54, 13, 55, 42, 56, 42, 57, 43, 58, 8, 59, 8, 60, 44, 61, 8, 62, 8, 63, 8, 64, 8, 65, 9, 66, 45, 67, 8, 68, 9, 69, 8, 70, 43, 71, 9, 0, 0, 0, 72, 73, -1, 25, 50, 38, 1, 46, 3, 31, 40, 40, 51, 9, 52, 38, 53, 41, 54, 13, 55, 42, 56, 42, 57, 8, 58, 8, 59, 8, 60, 44, 61, 8, 62, 8, 63, 8, 64, 8, 65, 9, 66, 38, 67, 8, 68, 9, 69, 8, 70, 43, 71, 9, 0, 0, 0, 74, 74, -1, 7, 75, 47, 76, 15, 77, 15, 78, 15, 79, 15, 80, 3, 81, 3, 0, 0, 0, 82, 82, -1, 8, 4, 15, 5, 48, 6, 49, 7, 3, 83, 50, 84, 51, 85, 52, 86, 9, 0, 10, 0, 41, 41, -1, 5, 1, 53, 2, 54, 42, 48, 43, 3, 44, 19, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="55" shared="false">
+				<vector2> 0.157777, 0.473338 </vector2>
+				<vector2> 0.8, 0.8 </vector2>
+				<int> -5 </int>
+				<bool> False </bool>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<matrix32> 1, -0, 0, 1, 0.0961819, 9.28327 </matrix32>
+				<int> 1 </int>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<real> 1 </real>
+				<resource  external="0">  </resource>
+				<int> 15 </int>
+				<vector2> 0.192781, -0.547379 </vector2>
+				<real> 180 </real>
+				<int> -10 </int>
+				<bool> True </bool>
+				<resource  external="1">  </resource>
+				<real> 0.4 </real>
+				<color> 0.769531, 0.656102, 0.354706, 1 </color>
+				<int> 0 </int>
+				<int> -1024 </int>
+				<int> 1024 </int>
+				<color> 0.503906, 0.0728302, 0.0728302, 0 </color>
+				<int> 2048 </int>
+				<real> 80 </real>
+				<resource  external="2">  </resource>
+				<resource  external="3">  </resource>
+				<vector2> -0.652984, -19.2242 </vector2>
+				<int> 10 </int>
+				<vector2> 0.0961819, 9.28327 </vector2>
+				<vector2> 0, -2.47979 </vector2>
+				<int> 20 </int>
+				<resource  external="4">  </resource>
+				<vector2> 0.0218945, 1.07032 </vector2>
+				<int> 25 </int>
+				<resource  external="5">  </resource>
+				<vector2> -0.00714874, 10.0349 </vector2>
+				<resource  external="6">  </resource>
+				<real> 0.5 </real>
+				<vector2> 1.84142, 2.75924 </vector2>
+				<int> 30 </int>
+				<resource  external="7">  </resource>
+				<real> 20 </real>
+				<real> 10 </real>
+				<real> 9.8 </real>
+				<real> 0.3 </real>
+				<vector2> -2.10308, 2.95646 </vector2>
+				<rect2> -10, -10, 20, 20 </rect2>
+				<resource  resource_type="Shape2D" path="local://2">  </resource>
+				<matrix32> 1.22219, -0, 0, 1.14784, 0.040607, -0.570059 </matrix32>
+				<vector2> 0, 1 </vector2>
+				<real> 98 </real>
+				<real> 0.1 </real>
+				<vector2> 0.040607, -0.570059 </vector2>
+				<vector2> 1.22219, 1.14784 </vector2>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>

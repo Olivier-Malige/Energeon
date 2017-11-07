@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://Fonts/pixel.fnt" type="BitmapFont" id=1]
+
+[node name="Info_key" type="Label"]
+
+anchor/left = 2
+anchor/top = 2
+anchor/right = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 0.878646
+margin/top = 0.00555556
+margin/right = -291.0
+margin/bottom = 55.0
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 0.617188, 0.245911, 0, 1 )
+text = "R restart\nF8 quit\nF3 music  off on\nF11 switch fullscreen"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+

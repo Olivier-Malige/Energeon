@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="22" version="2.1" version_name="Godot Engine v2.1.stable.official">
+	<ext_resource path="res://Fonts/cave_font.fnt" type="BitmapFont" index="2"></ext_resource>
+	<ext_resource path="res://Sounds/RedButtun.wav" type="Sample" index="15"></ext_resource>
+	<ext_resource path="res://Sounds/EnnemyDeath.wav" type="Sample" index="9"></ext_resource>
+	<ext_resource path="res://Sounds/PlayerHurt.wav" type="Sample" index="12"></ext_resource>
+	<ext_resource path="res://Sounds/PlayerDeath.wav" type="Sample" index="11"></ext_resource>
+	<ext_resource path="res://Sounds/BlueButtun.wav" type="Sample" index="7"></ext_resource>
+	<ext_resource path="res://Sounds/Flame.wav" type="Sample" index="10"></ext_resource>
+	<ext_resource path="res://Sounds/secret.wav" type="Sample" index="18"></ext_resource>
+	<ext_resource path="res://GDScripts/World.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://Sounds/RedPotionUP.wav" type="Sample" index="16"></ext_resource>
+	<ext_resource path="res://Sounds/BluePotionUP.wav" type="Sample" index="8"></ext_resource>
+	<ext_resource path="res://Sounds/Potion.wav" type="Sample" index="14"></ext_resource>
+	<ext_resource path="res://Sounds/rat.wav" type="Sample" index="17"></ext_resource>
+	<ext_resource path="res://Sounds/Portal.wav" type="Sample" index="13"></ext_resource>
+	<ext_resource path="res://Scenes/Ui/Info_key.tscn" type="PackedScene" index="1"></ext_resource>
+	<ext_resource path="res://Scenes/Ui/BlueButtunTimer.tscn" type="PackedScene" index="4"></ext_resource>
+	<ext_resource path="res://Scenes/Ui/NextLevelKeyUI.tscn" type="PackedScene" index="6"></ext_resource>
+	<ext_resource path="res://Scenes/Ui/RedButtunTimer.tscn" type="PackedScene" index="5"></ext_resource>
+	<ext_resource path="res://Scenes/Objects/Player.xml" type="PackedScene" index="19"></ext_resource>
+	<ext_resource path="res://Scenes/Ui/Alpha.tscn" type="PackedScene" index="3"></ext_resource>
+	<resource type="SampleLibrary" path="local://1">
+		<dictionary name="samples/BlueButtun" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="7">  </resource>
+		</dictionary>
+		<dictionary name="samples/BluePotionUP" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="8">  </resource>
+		</dictionary>
+		<dictionary name="samples/EnnemyDeath" shared="false">
+			<string> "db" </string>
+			<real> -20 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="9">  </resource>
+		</dictionary>
+		<dictionary name="samples/Flame" shared="false">
+			<string> "db" </string>
+			<real> -10 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="10">  </resource>
+		</dictionary>
+		<dictionary name="samples/PlayerDeath" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="11">  </resource>
+		</dictionary>
+		<dictionary name="samples/PlayerHurt" shared="false">
+			<string> "db" </string>
+			<real> -10 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="12">  </resource>
+		</dictionary>
+		<dictionary name="samples/Portal" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="13">  </resource>
+		</dictionary>
+		<dictionary name="samples/Potion" shared="false">
+			<string> "db" </string>
+			<real> 0.01 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="14">  </resource>
+		</dictionary>
+		<dictionary name="samples/RedButtun" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="15">  </resource>
+		</dictionary>
+		<dictionary name="samples/RedPotionUP" shared="false">
+			<string> "db" </string>
+			<real> -10 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="16">  </resource>
+		</dictionary>
+		<dictionary name="samples/rat" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="17">  </resource>
+		</dictionary>
+		<dictionary name="samples/secret" shared="false">
+			<string> "db" </string>
+			<real> 0 </real>
+			<string> "pitch" </string>
+			<real> 1 </real>
+			<string> "sample" </string>
+			<resource  external="18">  </resource>
+		</dictionary>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 2 </int>
+			<string> "conns" </string>
+			<int_array  len="12"> 				9, 0, 58, 57, 2, 0, 13, 0, 58, 59, 2, 0 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="3" shared="false">
+				<node_path> "UI/BlueButtunTimer" </node_path>
+				<node_path> "UI/RedButtunTimer" </node_path>
+				<node_path> "Player" </node_path>
+			</array>
+			<string> "names" </string>
+			<string_array  len="60">
+				<string> "World" </string>
+				<string> "script/script" </string>
+				<string> "Node" </string>
+				<string> "UI" </string>
+				<string> "layer" </string>
+				<string> "offset" </string>
+				<string> "rotation" </string>
+				<string> "scale" </string>
+				<string> "CanvasLayer" </string>
+				<string> "Lives" </string>
+				<string> "Info_key" </string>
+				<string> "margin/left" </string>
+				<string> "margin/top" </string>
+				<string> "margin/right" </string>
+				<string> "margin/bottom" </string>
+				<string> "custom_fonts/font" </string>
+				<string> "text" </string>
+				<string> "Alpha" </string>
+				<string> "rect/scale" </string>
+				<string> "BlueButtunTimer" </string>
+				<string> "RedButtunTimer" </string>
+				<string> "NextLevelKeyUI" </string>
+				<string> "transform/pos" </string>
+				<string> "SamplePlayer" </string>
+				<string> "config/polyphony" </string>
+				<string> "config/samples" </string>
+				<string> "default/volume_db" </string>
+				<string> "default/pitch_scale" </string>
+				<string> "default/pan" </string>
+				<string> "default/depth" </string>
+				<string> "default/height" </string>
+				<string> "default/filter/type" </string>
+				<string> "default/filter/cutoff" </string>
+				<string> "default/filter/resonance" </string>
+				<string> "default/filter/gain" </string>
+				<string> "default/reverb_room" </string>
+				<string> "default/reverb_send" </string>
+				<string> "default/chorus_send" </string>
+				<string> "Shield" </string>
+				<string> "process_mode" </string>
+				<string> "wait_time" </string>
+				<string> "one_shot" </string>
+				<string> "autostart" </string>
+				<string> "Timer" </string>
+				<string> "Player" </string>
+				<string> "Camera2D" </string>
+				<string> "limit/left" </string>
+				<string> "limit/right" </string>
+				<string> "Anim" </string>
+				<string> "playerSprite" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "Light2D" </string>
+				<string> "LightOccluder2D" </string>
+				<string> "FirePos" </string>
+				<string> "CanvasModulate" </string>
+				<string> "color" </string>
+				<string> "PlayerRespawn" </string>
+				<string> "_on_Shield_timeout" </string>
+				<string> "timeout" </string>
+				<string> "_on_PlayerDeath_timeout" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 14 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="204"> 				-1, -1, 2, 0, -1, 1, 1, 0, 0, 0, 0, 8, 3, -1, 4, 4, 1, 5, 2, 6, 3, 7, 4, 0, 1, 0, 2, 9, -1, 0, 0, 1, 0, 2147483647, 10, 5, 6, 11, 6, 12, 7, 13, 8, 14, 9, 15, 10, 16, 11, 0, 1, 0, 2147483647, 17, 12, 7, 18, 13, 11, 14, 12, 15, 13, 16, 14, 17, 15, 10, 16, 18, 0, 1, 0, 2147483647, 19, 19, 4, 11, 20, 12, 21, 13, 22, 14, 23, 0, 1, 0, 2147483647, 20, 24, 4, 11, 25, 12, 26, 13, 27, 14, 28, 0, 1, 0, 2147483647, 21, 29, 1, 22, 30, 0, 0, 0, 23, 23, -1, 14, 24, 31, 25, 32, 26, 33, 27, 34, 28, 3, 29, 3, 30, 3, 31, 35, 32, 36, 33, 34, 34, 34, 35, 37, 36, 3, 37, 3, 0, 0, 0, 43, 38, -1, 4, 39, 1, 40, 38, 41, 39, 42, 39, 0, 0, 0, 2147483647, 44, 40, 1, 22, 41, 0, 10, -1, 2147483647, 45, -1, 2, 46, 35, 47, 42, 0, 0, 0, 54, 54, -1, 1, 55, 43, 0, 0, 0, 43, 56, -1, 4, 39, 1, 40, 44, 41, 45, 42, 39, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="46" shared="false">
+				<resource  external="0">  </resource>
+				<int> 1 </int>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<resource  external="1">  </resource>
+				<real> 0.831771 </real>
+				<real> 0.006481 </real>
+				<real> -201 </real>
+				<real> 92 </real>
+				<resource  external="2">  </resource>
+				<string> "R Restart&#000a;F3 Music  off on&#000a;F9 Quit&#000a;F11 switch fullscreen" </string>
+				<resource  external="3">  </resource>
+				<vector2> 0.7, 0.7 </vector2>
+				<real> 0.65625 </real>
+				<real> 0.975926 </real>
+				<real> -250 </real>
+				<real> 1073 </real>
+				<string> "Godot Gamejam 2016/2017 Original Edition    Credits  : Olivier MALIGE  @ Arknoid" </string>
+				<resource  external="4">  </resource>
+				<real> 702 </real>
+				<real> 973 </real>
+				<real> 902 </real>
+				<real> 1003 </real>
+				<resource  external="5">  </resource>
+				<real> 1058 </real>
+				<real> 972 </real>
+				<real> 1258 </real>
+				<real> 1002 </real>
+				<resource  external="6">  </resource>
+				<vector2> 974.072, 988.158 </vector2>
+				<int> 5 </int>
+				<resource  resource_type="SampleLibrary" path="local://1">  </resource>
+				<real> -2 </real>
+				<real> 1 </real>
+				<int> 0 </int>
+				<real> 5000 </real>
+				<int> 2 </int>
+				<real> 1.5 </real>
+				<bool> False </bool>
+				<resource  external="19">  </resource>
+				<vector2> 10.1123, -18.9739 </vector2>
+				<int> 100000 </int>
+				<color> 0.121845, 0.120483, 0.164063, 1 </color>
+				<real> 2 </real>
+				<bool> True </bool>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>

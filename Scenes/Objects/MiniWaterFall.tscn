@@ -1,0 +1,112 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://Sprites/Effects/shoot_halo.png" type="Texture" id=1]
+
+[node name="WaterFall14" type="Node2D"]
+
+transform/pos = Vector2( 2294.32, 290.205 )
+transform/rot = 0.054631
+
+[node name="Particles2D" type="Particles2D" parent="."]
+
+config/amount = 20
+config/lifetime = 1.0
+params/direction = 0.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 1.5
+params/final_size = 0.2
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+color/color = Color( 0.321686, 0.426452, 0.992188, 1 )
+
+[node name="Particles2D1" type="Particles2D" parent="."]
+
+transform/pos = Vector2( 2.35608, 0.419392 )
+config/amount = 20
+config/lifetime = 1.0
+params/direction = 0.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 1.5
+params/final_size = 0.2
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+color/color = Color( 0.411392, 0.474676, 0.816406, 1 )
+
+[node name="Particles2D2" type="Particles2D" parent="."]
+
+transform/pos = Vector2( -0.648872, 0.419392 )
+config/amount = 20
+config/lifetime = 1.0
+params/direction = 0.0
+params/spread = 10.0
+params/linear_velocity = 20.0
+params/spin_velocity = 0.0
+params/orbit_velocity = 0.0
+params/gravity_direction = 0.0
+params/gravity_strength = 9.8
+params/radial_accel = 0.0
+params/tangential_accel = 0.0
+params/damping = 0.0
+params/initial_angle = 0.0
+params/initial_size = 1.5
+params/final_size = 0.2
+params/hue_variation = 0.0
+params/anim_speed_scale = 1.0
+params/anim_initial_pos = 0.0
+color/color = Color( 0.474777, 0.550129, 0.957031, 1 )
+
+[node name="Light2D" type="Light2D" parent="."]
+
+transform/pos = Vector2( 2.85291, 8.10162 )
+z/z = 10
+enabled = true
+editor_only = false
+texture = ExtResource( 1 )
+offset = Vector2( 0, 0 )
+scale = 0.2
+color = Color( 0, 0.202332, 0.996094, 1 )
+energy = 0.2
+mode = 0
+range/height = 0.0
+range/z_min = -1024
+range/z_max = 1024
+range/layer_min = 0
+range/layer_max = 0
+range/item_mask = 1
+shadow/enabled = false
+shadow/color = Color( 0, 0, 0, 0 )
+shadow/buffer_size = 2048
+shadow/esm_multiplier = 80.0
+shadow/item_mask = 1
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+
+rect = Rect2( -10, -10, 20, 20 )
+enabler/pause_animations = true
+enabler/freeze_bodies = true
+enabler/pause_particles = true
+enabler/pause_animated_sprites = true
+enabler/process_parent = false
+enabler/fixed_process_parent = false
+
+

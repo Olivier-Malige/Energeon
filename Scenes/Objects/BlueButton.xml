@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="6" version="2.1" version_name="Godot Engine v2.1.stable.official">
+	<ext_resource path="res://GDScripts/BlueButton.gd" type="Script" index="0"></ext_resource>
+	<ext_resource path="res://Sprites/Objects/Button_bleu.png" type="Texture" index="1"></ext_resource>
+	<ext_resource path="res://Sprites/Effects/torch_light.png" type="Texture" index="2"></ext_resource>
+	<ext_resource path="res://Scenes/Objects/buttonparticle.tscn" type="PackedScene" index="3"></ext_resource>
+	<resource type="RectangleShape2D" path="local://1">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 5.57767, 5.21958 </vector2>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "conn_count" </string>
+			<int> 2 </int>
+			<string> "conns" </string>
+			<int_array  len="12"> 				0, 0, 59, 58, 2, 0, 3, 0, 61, 60, 2, 0 </int_array>
+			<string> "editable_instances" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "names" </string>
+			<string_array  len="62">
+				<string> "Area2D" </string>
+				<string> "transform/pos" </string>
+				<string> "input/pickable" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "gravity_vec" </string>
+				<string> "gravity" </string>
+				<string> "linear_damp" </string>
+				<string> "angular_damp" </string>
+				<string> "script/script" </string>
+				<string> "blue" </string>
+				<string> "timer" </string>
+				<string> "maxTimer" </string>
+				<string> "Blue_buttun" </string>
+				<string> "Buttun" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "transform/scale" </string>
+				<string> "shape" </string>
+				<string> "trigger" </string>
+				<string> "_update_shape_index" </string>
+				<string> "Sprite" </string>
+				<string> "z/z" </string>
+				<string> "texture" </string>
+				<string> "hframes" </string>
+				<string> "Timer" </string>
+				<string> "process_mode" </string>
+				<string> "wait_time" </string>
+				<string> "one_shot" </string>
+				<string> "autostart" </string>
+				<string> "Light2D" </string>
+				<string> "enabled" </string>
+				<string> "editor_only" </string>
+				<string> "offset" </string>
+				<string> "scale" </string>
+				<string> "color" </string>
+				<string> "energy" </string>
+				<string> "mode" </string>
+				<string> "range/height" </string>
+				<string> "range/z_min" </string>
+				<string> "range/z_max" </string>
+				<string> "range/layer_min" </string>
+				<string> "range/layer_max" </string>
+				<string> "range/item_mask" </string>
+				<string> "shadow/enabled" </string>
+				<string> "shadow/color" </string>
+				<string> "shadow/buffer_size" </string>
+				<string> "shadow/esm_multiplier" </string>
+				<string> "shadow/item_mask" </string>
+				<string> "Particles2D" </string>
+				<string> "VisibilityEnabler2D" </string>
+				<string> "rect" </string>
+				<string> "enabler/pause_animations" </string>
+				<string> "enabler/freeze_bodies" </string>
+				<string> "enabler/pause_particles" </string>
+				<string> "enabler/pause_animated_sprites" </string>
+				<string> "enabler/process_parent" </string>
+				<string> "enabler/fixed_process_parent" </string>
+				<string> "_on_Area2D_body_enter" </string>
+				<string> "body_enter" </string>
+				<string> "_on_Timer_timeout" </string>
+				<string> "timeout" </string>
+			</string_array>
+			<string> "node_count" </string>
+			<int> 7 </int>
+			<string> "node_paths" </string>
+			<array  len="0" shared="false">
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="155"> 				-1, -1, 0, 0, -1, 13, 1, 0, 2, 1, 3, 2, 4, 3, 5, 1, 6, 4, 7, 5, 8, 6, 9, 7, 10, 8, 11, 1, 12, 9, 13, 10, 2, 14, 15, 0, 0, 16, 16, -1, 5, 1, 11, 17, 12, 18, 2, 19, 1, 20, 13, 0, 0, 0, 21, 21, -1, 3, 22, 14, 23, 15, 24, 9, 0, 0, 0, 25, 25, -1, 4, 26, 16, 27, 17, 28, 1, 29, 18, 0, 0, 0, 30, 30, -1, 19, 31, 1, 32, 18, 23, 19, 33, 20, 34, 21, 35, 22, 36, 7, 37, 13, 38, 23, 39, 24, 40, 25, 41, 13, 42, 13, 43, 16, 44, 1, 45, 26, 46, 27, 47, 28, 48, 16, 0, 0, 0, 2147483647, 49, 29, 1, 1, 30, 0, 0, 0, 50, 50, -1, 7, 51, 31, 52, 1, 53, 1, 54, 1, 55, 1, 56, 18, 57, 18, 0 </int_array>
+			<string> "variants" </string>
+			<array  len="32" shared="false">
+				<vector2> 0, -0.0769424 </vector2>
+				<bool> True </bool>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<matrix32> 1.01511, -0, 0, 1.05427, -0.121877, 0.414248 </matrix32>
+				<vector2> 0, 1 </vector2>
+				<real> 98 </real>
+				<real> 0.1 </real>
+				<real> 1 </real>
+				<resource  external="0">  </resource>
+				<int> 2 </int>
+				<int> 30 </int>
+				<vector2> -0.121877, 0.414248 </vector2>
+				<vector2> 1.01511, 1.05427 </vector2>
+				<int> 0 </int>
+				<int> -5 </int>
+				<resource  external="1">  </resource>
+				<int> 1 </int>
+				<real> 2 </real>
+				<bool> False </bool>
+				<resource  external="2">  </resource>
+				<vector2> 0, 0 </vector2>
+				<real> 0.2 </real>
+				<color> 0, 0.329895, 0.898438, 1 </color>
+				<real> 0 </real>
+				<int> -1024 </int>
+				<int> 1024 </int>
+				<color> 0, 0, 0, 0 </color>
+				<int> 2048 </int>
+				<real> 80 </real>
+				<resource  external="3">  </resource>
+				<vector2> 0.155316, -3.92135 </vector2>
+				<rect2> -10, -10, 20, 20 </rect2>
+			</array>
+			<string> "version" </string>
+			<int> 2 </int>
+		</dictionary>
+
+	</main_resource>
+</resource_file>

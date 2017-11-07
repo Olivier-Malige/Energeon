@@ -1,0 +1,128 @@
+[gd_scene load_steps=9 format=1]
+
+[ext_resource path="res://GDScripts/Portal.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Objects/BluePortal.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 11.8939, 8.87092 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -11.4046, 15.9399, -16.3634, 17.0669, -15.6872, -3.21908, -11.8554, 8.0509 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+
+custom_solver_bias = 0.0
+points = Vector2Array( 15.1926, -4.34608, 15.8688, 15.9399, 11.3608, 15.4891, 11.3608, 8.2763 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -5.5442, -14.2637, 4.14797, -14.4891, 12.037, -9.75567, 15.1926, -4.34608, 11.3608, 8.2763, -11.8554, 8.0509, -15.6872, -3.21908, -14.1094, -9.98107 )
+
+[sub_resource type="Animation" id=5]
+
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0 ), "transitions":FloatArray( 1 ), "update":1, "values":[ 0 ] }
+
+[sub_resource type="Animation" id=6]
+
+length = 1.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = { "times":FloatArray( 0, 0.2, 0.4, 0.6, 0.8 ), "transitions":FloatArray( 1, 1, 1, 1, 1 ), "update":1, "values":[ 1, 2, 3, 4, 5 ] }
+
+[node name="BluePortal" type="Area2D" groups=[ "Portal" ]]
+
+transform/scale = Vector2( 0.7, 0.7 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1.35762, 0, 4.55704 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+script/script = ExtResource( 1 )
+isBlue = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0.4508, 0 )
+shapes/0/trigger = false
+shapes/1/shape = SubResource( 3 )
+shapes/1/transform = Matrix32( 1, 0, 0, 1, 0.4508, 0 )
+shapes/1/trigger = false
+shapes/2/shape = SubResource( 4 )
+shapes/2/transform = Matrix32( 1, 0, 0, 1, 0.4508, 0 )
+shapes/2/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = { "_edit_lock_":true }
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+
+transform/pos = Vector2( 0.4508, 0 )
+build_mode = 0
+polygon = Vector2Array( -11.8554, 8.0509, 11.3608, 8.2763, 11.3608, 15.4891, 15.8688, 15.9399, 15.1926, -4.34608, 12.037, -9.75567, 4.14797, -14.4891, -5.5442, -14.2637, -14.1094, -9.98107, -15.6872, -3.21908, -16.3634, 17.0669, -11.4046, 15.9399 )
+shape_range = Vector2( 0, 2 )
+trigger = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( 0, 4.55704 )
+transform/scale = Vector2( 1, 1.35762 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+hframes = 6
+frame = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/Close = SubResource( 5 )
+anims/Open = SubResource( 6 )
+playback/active = true
+playback/speed = 2.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="VisibilityEnabler2D" type="VisibilityEnabler2D" parent="."]
+
+rect = Rect2( -10, -10, 20, 20 )
+enabler/pause_animations = true
+enabler/freeze_bodies = true
+enabler/pause_particles = true
+enabler/pause_animated_sprites = true
+enabler/process_parent = false
+enabler/fixed_process_parent = false
+
+[connection signal="body_enter" from="." to="." method="_on_BluePortal_body_enter"]
+
+
